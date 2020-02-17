@@ -7,7 +7,7 @@ metadata:
     commit.image.appsody.dev/contextDir: /barista-http
     commit.image.appsody.dev/date: Wed Feb 5 09:23:27 2020 +0000
     commit.image.appsody.dev/message: Appsodyified barista-http
-    image.opencontainers.org/created: "2020-02-06T15:55:09Z"
+    image.opencontainers.org/created: "2020-02-17T13:14:34Z"
     image.opencontainers.org/documentation: https://github.com/ianpartridge/quarkus-coffeeshop-demo
     image.opencontainers.org/revision: 9734a2bb31b6e00d0b87043b2220e4a8106a7006-modified
     image.opencontainers.org/source: https://github.com/ianpartridge/quarkus-coffeeshop-demo/tree/master
@@ -15,20 +15,20 @@ metadata:
     stack.appsody.dev/authors: Mike Andrasak <andrasak@us.ibm.com>, Andy Mauer <ajmauer@us.ibm.com>,
       Scott Kurz <skurz@us.ibm.com>, Adam Wisniewski <awisniew@us.ibm.com>
     stack.appsody.dev/configured: docker.io/appsody/java-openliberty:0.1
-    stack.appsody.dev/created: "2020-02-06T09:49:06Z"
+    stack.appsody.dev/created: "2020-02-07T16:20:59Z"
     stack.appsody.dev/description: Open Liberty & OpenJ9 using Maven
     stack.appsody.dev/licenses: Apache-2.0
-    stack.appsody.dev/tag: docker.io/appsody/java-openliberty:0.1.6
+    stack.appsody.dev/tag: docker.io/appsody/java-openliberty:0.1.7
     stack.appsody.dev/title: Open Liberty
   creationTimestamp: null
   labels:
     image.opencontainers.org/title: appsody-http
     stack.appsody.dev/id: java-openliberty
-    stack.appsody.dev/version: 0.1.6
+    stack.appsody.dev/version: 0.1.7
   name: appsody-http
   namespace: appsody-http
 spec:
-  applicationImage: matthewpwilson/coffeeshop:appsody-http-repo
+  applicationImage: matthewpwilson/barista-http:mon2
   createKnativeService: false
   expose: true
   livenessProbe:
@@ -50,6 +50,9 @@ spec:
     annotations:
       prometheus.io/scrape: "true"
     port: 9080
+    provides:
+      category: openapi
+      context: /barista
     type: NodePort
   stack: java-openliberty
   version: 1.0.0
