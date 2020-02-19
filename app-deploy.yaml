@@ -5,13 +5,14 @@ metadata:
     commit.image.appsody.dev/author: Matthew Wilson <matthew.wilson@uk.ibm.com>
     commit.image.appsody.dev/committer: Matthew Wilson <matthew.wilson@uk.ibm.com>
     commit.image.appsody.dev/contextDir: /barista-http
-    commit.image.appsody.dev/date: Wed Feb 5 09:23:27 2020 +0000
-    commit.image.appsody.dev/message: Appsodyified barista-http
-    image.opencontainers.org/created: "2020-02-19T14:11:16Z"
-    image.opencontainers.org/documentation: https://github.com/ianpartridge/quarkus-coffeeshop-demo
-    image.opencontainers.org/revision: 9734a2bb31b6e00d0b87043b2220e4a8106a7006-modified
-    image.opencontainers.org/source: https://github.com/ianpartridge/quarkus-coffeeshop-demo/tree/master
-    image.opencontainers.org/url: https://github.com/ianpartridge/quarkus-coffeeshop-demo
+    commit.image.appsody.dev/date: Wed Feb 19 14:33:38 2020 +0000
+    commit.image.appsody.dev/message: Update images & move barista-http to default
+      ns
+    image.opencontainers.org/created: "2020-02-19T15:13:40Z"
+    image.opencontainers.org/documentation: https://github.ibm.com/appsody-coffeeshop/barista-http
+    image.opencontainers.org/revision: 6c6eb4a890ae1f374c439c6bdc6a04c374286268-modified
+    image.opencontainers.org/source: https://github.ibm.com/appsody-coffeeshop/barista-http/tree/master
+    image.opencontainers.org/url: https://github.ibm.com/appsody-coffeeshop/barista-http
     stack.appsody.dev/authors: Mike Andrasak <andrasak@us.ibm.com>, Andy Mauer <ajmauer@us.ibm.com>,
       Scott Kurz <skurz@us.ibm.com>, Adam Wisniewski <awisniew@us.ibm.com>
     stack.appsody.dev/configured: docker.io/appsody/java-openliberty:0.1
@@ -22,10 +23,10 @@ metadata:
     stack.appsody.dev/title: Open Liberty
   creationTimestamp: null
   labels:
-    image.opencontainers.org/title: appsody-http
+    image.opencontainers.org/title: barista-http
     stack.appsody.dev/id: java-openliberty
     stack.appsody.dev/version: 0.1.7
-  name: appsody-http
+  name: barista-http
   namespace: default
 spec:
   applicationImage: ianpartridge/appsody-http:latest
