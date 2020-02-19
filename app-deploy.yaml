@@ -52,7 +52,7 @@ spec:
     port: 9080
     provides:
       category: openapi
-      context: /barista
+      context: /
     type: NodePort
   stack: java-openliberty
   version: 1.0.0
