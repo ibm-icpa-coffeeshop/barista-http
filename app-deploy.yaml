@@ -7,7 +7,7 @@ metadata:
     commit.image.appsody.dev/contextDir: /barista-http
     commit.image.appsody.dev/date: Wed Feb 5 09:23:27 2020 +0000
     commit.image.appsody.dev/message: Appsodyified barista-http
-    image.opencontainers.org/created: "2020-02-17T13:14:34Z"
+    image.opencontainers.org/created: "2020-02-19T14:11:16Z"
     image.opencontainers.org/documentation: https://github.com/ianpartridge/quarkus-coffeeshop-demo
     image.opencontainers.org/revision: 9734a2bb31b6e00d0b87043b2220e4a8106a7006-modified
     image.opencontainers.org/source: https://github.com/ianpartridge/quarkus-coffeeshop-demo/tree/master
@@ -26,9 +26,9 @@ metadata:
     stack.appsody.dev/id: java-openliberty
     stack.appsody.dev/version: 0.1.7
   name: appsody-http
-  namespace: appsody-http
+  namespace: default
 spec:
-  applicationImage: matthewpwilson/barista-http:mon2
+  applicationImage: ianpartridge/appsody-http:latest
   createKnativeService: false
   expose: true
   livenessProbe:
