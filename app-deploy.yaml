@@ -2,34 +2,71 @@ apiVersion: appsody.dev/v1beta1
 kind: AppsodyApplication
 metadata:
   annotations:
+    architecture: x86_64
+    authoritative-source-url: registry.access.redhat.com
+    build-date: 2019-10-29T16:44:53.794580
     commit.image.appsody.dev/author: Matthew Wilson <matthew.wilson@uk.ibm.com>
     commit.image.appsody.dev/committer: Matthew Wilson <matthew.wilson@uk.ibm.com>
     commit.image.appsody.dev/contextDir: /barista-http
-    commit.image.appsody.dev/date: Wed Feb 19 14:33:38 2020 +0000
-    commit.image.appsody.dev/message: Update images & move barista-http to default
-      ns
-    image.opencontainers.org/created: "2020-02-19T15:13:40Z"
+    commit.image.appsody.dev/date: Wed Feb 19 15:48:07 2020 +0000
+    commit.image.appsody.dev/message: Project renames
+    commit.stack.appsody.dev/author: Scott Kurz <skurz@us.ibm.com>
+    commit.stack.appsody.dev/committer: GitHub <noreply@github.com>
+    commit.stack.appsody.dev/contextDir: /incubator/java-openliberty
+    commit.stack.appsody.dev/date: Mon Feb 24 15:33:55 2020 +0000
+    commit.stack.appsody.dev/message: Perform mvn install as java_user (#686)
+    description: The Universal Base Image is designed and engineered to be the base
+      layer for all of your containerized applications, middleware and utilities.
+      This base image is freely redistributable, but Red Hat only supports Red Hat
+      technologies through subscriptions for Red Hat products. This image is maintained
+      by Red Hat and updated regularly.
+    distribution-scope: public
+    image.opencontainers.org/created: "2020-02-24T16:46:17Z"
     image.opencontainers.org/documentation: https://github.ibm.com/appsody-coffeeshop/barista-http
-    image.opencontainers.org/revision: 6c6eb4a890ae1f374c439c6bdc6a04c374286268-modified
+    image.opencontainers.org/revision: e7b72a7399ee8b01e7b071a754c5d8f8b9a72461-modified
     image.opencontainers.org/source: https://github.ibm.com/appsody-coffeeshop/barista-http/tree/master
     image.opencontainers.org/url: https://github.ibm.com/appsody-coffeeshop/barista-http
+    k8s.io/description: The Universal Base Image is designed and engineered to be
+      the base layer for all of your containerized applications, middleware and utilities.
+      This base image is freely redistributable, but Red Hat only supports Red Hat
+      technologies through subscriptions for Red Hat products. This image is maintained
+      by Red Hat and updated regularly.
+    k8s.io/display-name: Red Hat Universal Base Image 8
+    maintainer: Red Hat, Inc.
+    name: ubi8
+    openshift.io/expose-services: ""
+    openshift.io/tags: base rhel8
+    redhat.com/build-host: cpt-1002.osbs.prod.upshift.rdu2.redhat.com
+    redhat.com/component: ubi8-container
+    redhat.com/license_terms: https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI
+    release: "277"
     stack.appsody.dev/authors: Mike Andrasak <andrasak@us.ibm.com>, Andy Mauer <ajmauer@us.ibm.com>,
       Scott Kurz <skurz@us.ibm.com>, Adam Wisniewski <awisniew@us.ibm.com>
-    stack.appsody.dev/configured: docker.io/appsody/java-openliberty:0.1
-    stack.appsody.dev/created: "2020-02-07T16:20:59Z"
+    stack.appsody.dev/configured: docker.io/appsody/java-openliberty:0.2
+    stack.appsody.dev/created: "2020-02-24T15:35:57Z"
     stack.appsody.dev/description: Open Liberty & OpenJ9 using Maven
+    stack.appsody.dev/documentation: https://github.com/appsody/stacks/tree/master/incubator/java-openliberty/README.md
     stack.appsody.dev/licenses: Apache-2.0
-    stack.appsody.dev/tag: docker.io/appsody/java-openliberty:0.1.7
+    stack.appsody.dev/revision: 6ceac5fc3b5421cba0ca7b6a52db3e7008ff15f6
+    stack.appsody.dev/source: https://github.com/appsody/stacks/tree/master/incubator/java-openliberty/image
+    stack.appsody.dev/tag: docker.io/appsody/java-openliberty:0.2.2
     stack.appsody.dev/title: Open Liberty
+    stack.appsody.dev/url: https://github.com/appsody/stacks/tree/master/incubator/java-openliberty
+    summary: Provides the latest release of Red Hat Universal Base Image 8.
+    url: https://access.redhat.com/containers/#/registry.access.redhat.com/ubi8/images/8.1-277
+    vcs-ref: c42933bcdbf9f1c232e981a5e40de257c3534c8e
+    vcs-type: git
+    vendor: Red Hat, Inc.
+    version: "8.1"
   creationTimestamp: null
   labels:
     image.opencontainers.org/title: barista-http
     stack.appsody.dev/id: java-openliberty
-    stack.appsody.dev/version: 0.1.7
+    stack.appsody.dev/version: 0.2.2
   name: barista-http
   namespace: default
 spec:
-  applicationImage: ianpartridge/appsody-http:latest
+  applicationImage: ianpartridge/barista-http:latest
   createKnativeService: false
   expose: true
   livenessProbe:
