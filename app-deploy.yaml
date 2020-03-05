@@ -7,8 +7,8 @@ metadata:
     build-date: 2019-10-29T16:44:53.794580
     commit.image.appsody.dev/author: Matthew P Wilson <matthew.wilson@uk.ibm.com>
     commit.image.appsody.dev/committer: GitHub Enterprise <noreply@github.ibm.com>
-    commit.image.appsody.dev/date: Tue Feb 25 08:47:40 2020 +0000
-    commit.image.appsody.dev/message: 'Merge pull request #2 from appsody-coffeeshop/app-name'
+    commit.image.appsody.dev/date: Tue Feb 25 13:14:10 2020 +0000
+    commit.image.appsody.dev/message: 'Merge pull request #3 from appsody-coffeeshop/update-deploy'
     commit.stack.appsody.dev/author: Scott Kurz <skurz@us.ibm.com>
     commit.stack.appsody.dev/committer: GitHub <noreply@github.com>
     commit.stack.appsody.dev/contextDir: /incubator/java-openliberty
@@ -20,9 +20,9 @@ metadata:
       technologies through subscriptions for Red Hat products. This image is maintained
       by Red Hat and updated regularly.
     distribution-scope: public
-    image.opencontainers.org/created: "2020-02-25T12:40:50Z"
+    image.opencontainers.org/created: "2020-03-05T09:45:10Z"
     image.opencontainers.org/documentation: https://github.ibm.com/appsody-coffeeshop/barista-http
-    image.opencontainers.org/revision: b86dfbd3ec96a40769f683b58ba1ac282aa119d4-modified
+    image.opencontainers.org/revision: 88fa551f48dca158b4a2f2708c90ff677c6aad23-modified
     image.opencontainers.org/source: https://github.ibm.com/appsody-coffeeshop/barista-http/tree/master
     image.opencontainers.org/url: https://github.ibm.com/appsody-coffeeshop/barista-http
     k8s.io/description: The Universal Base Image is designed and engineered to be
@@ -59,7 +59,7 @@ metadata:
     version: "8.1"
   creationTimestamp: null
   labels:
-    app.appsody.dev/name: coffeeshop
+    app.kubernetes.io/part-of: coffeeshop
     image.opencontainers.org/title: barista-http
     stack.appsody.dev/id: java-openliberty
     stack.appsody.dev/version: 0.2.2
@@ -90,4 +90,3 @@ spec:
     type: NodePort
   stack: java-openliberty
   version: 1.0.0
-status: {}
