@@ -87,7 +87,7 @@ spec:
     annotations:
       prometheus.io/scrape: "true"
     port: 9080
-    type: NodePort
+    type: ClusterIP
     provides:
       category: openapi
       context: /
