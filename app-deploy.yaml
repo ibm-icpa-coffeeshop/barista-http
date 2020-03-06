@@ -88,5 +88,8 @@ spec:
       prometheus.io/scrape: "true"
     port: 9080
     type: NodePort
+    provides:
+      category: openapi
+      context: /
   stack: java-openliberty
   version: 1.0.0
