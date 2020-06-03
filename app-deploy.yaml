@@ -4,27 +4,24 @@ metadata:
   annotations:
     architecture: x86_64
     authoritative-source-url: registry.access.redhat.com
-    build-date: 2019-10-29T16:44:53.794580
-    commit.image.appsody.dev/author: Matthew P Wilson <matthew.wilson@uk.ibm.com>
+    build-date: 2020-03-31T14:54:13.907559
+    commit.image.appsody.dev/author: Sandra Hayward <Sandra.Hayward@ibm.com>
     commit.image.appsody.dev/committer: GitHub Enterprise <noreply@github.ibm.com>
-    commit.image.appsody.dev/date: Tue Feb 25 13:14:10 2020 +0000
-    commit.image.appsody.dev/message: 'Merge pull request #3 from appsody-coffeeshop/update-deploy'
-    commit.stack.appsody.dev/author: Mike Andrasak <andrasak@us.ibm.com>
-    commit.stack.appsody.dev/committer: GitHub <noreply@github.com>
+    commit.image.appsody.dev/contextDir: C:\Users\SandraHayward\Documents\Code\Appsody-Coffeeshop\barista-http
+    commit.image.appsody.dev/date: Wed May 20 13:50:45 2020 +0100
+    commit.image.appsody.dev/message: 'Merge pull request #7 from appsody-coffeeshop/timeout'
     commit.stack.appsody.dev/contextDir: /incubator/java-openliberty
-    commit.stack.appsody.dev/date: Tue Mar 10 16:23:57 2020 +0000
-    commit.stack.appsody.dev/message: java-openliberty:keystore.xml perms not set
-      correctly (#706)
-    description: The Universal Base Image is designed and engineered to be the base
-      layer for all of your containerized applications, middleware and utilities.
-      This base image is freely redistributable, but Red Hat only supports Red Hat
-      technologies through subscriptions for Red Hat products. This image is maintained
-      by Red Hat and updated regularly.
+    commit.stack.appsody.dev/date: Fri May 29 15:23:22 2020 +0100
+    commit.stack.appsody.dev/message: 'java-openliberty: Work around docker bug (#816)'
+    description: Eclipse MicroProfile & Jakarta EE on Open Liberty & OpenJ9 using
+      Maven
     distribution-scope: public
-    image.opencontainers.org/created: "2020-03-25T10:32:55Z"
+    image.opencontainers.org/created: "2020-06-03T16:41:55+01:00"
     image.opencontainers.org/documentation: https://github.ibm.com/appsody-coffeeshop/barista-http
-    image.opencontainers.org/revision: 88fa551f48dca158b4a2f2708c90ff677c6aad23-modified
-    image.opencontainers.org/source: https://github.ibm.com/appsody-coffeeshop/barista-http/tree/master
+    image.opencontainers.org/revision: 27f49a152d51ad42fc96cfa0c7fda800ba444684
+    image.opencontainers.org/source: |-
+      https://github.ibm.com/appsody-coffeeshop/barista-http/tree/add-monitoring-and-dashboard
+      M
     image.opencontainers.org/url: https://github.ibm.com/appsody-coffeeshop/barista-http
     k8s.io/description: The Universal Base Image is designed and engineered to be
       the base layer for all of your containerized applications, middleware and utilities.
@@ -33,40 +30,42 @@ metadata:
       by Red Hat and updated regularly.
     k8s.io/display-name: Red Hat Universal Base Image 8
     maintainer: Red Hat, Inc.
-    name: ubi8
+    name: java-openliberty
     openshift.io/expose-services: ""
     openshift.io/tags: base rhel8
-    redhat.com/build-host: cpt-1002.osbs.prod.upshift.rdu2.redhat.com
+    redhat.com/build-host: cpt-1007.osbs.prod.upshift.rdu2.redhat.com
     redhat.com/component: ubi8-container
     redhat.com/license_terms: https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI
-    release: "277"
-    stack.appsody.dev/authors: Mike Andrasak <andrasak@us.ibm.com>, Andy Mauer <ajmauer@us.ibm.com>,
-      Scott Kurz <skurz@us.ibm.com>, Adam Wisniewski <awisniew@us.ibm.com>
+    release: "408"
+    stack.appsody.dev/authors: Mike Andrasak <uberskigeek>, Andy Mauer <ajm01>, Scott
+      Kurz <scottkurz>, Adam Wisniewski <awisniew90>
     stack.appsody.dev/configured: docker.io/appsody/java-openliberty:0.2
-    stack.appsody.dev/created: "2020-03-10T16:41:42Z"
-    stack.appsody.dev/description: Open Liberty & OpenJ9 using Maven
+    stack.appsody.dev/created: "2020-05-29T14:26:34Z"
+    stack.appsody.dev/description: Eclipse MicroProfile & Jakarta EE on Open Liberty
+      & OpenJ9 using Maven
     stack.appsody.dev/documentation: https://github.com/appsody/stacks/tree/master/incubator/java-openliberty/README.md
     stack.appsody.dev/licenses: Apache-2.0
-    stack.appsody.dev/revision: 90285f36357fa25db53d98cf1dcb6683a66266ec
+    stack.appsody.dev/revision: a90a1ad89fa4de9efcacd317e1309a510afd0cd6
     stack.appsody.dev/source: https://github.com/appsody/stacks/tree/master/incubator/java-openliberty/image
-    stack.appsody.dev/tag: docker.io/appsody/java-openliberty:0.2.3
+    stack.appsody.dev/tag: docker.io/appsody/java-openliberty:0.2.13
     stack.appsody.dev/title: Open Liberty
     stack.appsody.dev/url: https://github.com/appsody/stacks/tree/master/incubator/java-openliberty
-    summary: Provides the latest release of Red Hat Universal Base Image 8.
-    url: https://access.redhat.com/containers/#/registry.access.redhat.com/ubi8/images/8.1-277
-    vcs-ref: c42933bcdbf9f1c232e981a5e40de257c3534c8e
+    summary: Open Liberty
+    url: https://access.redhat.com/containers/#/registry.access.redhat.com/ubi8/images/8.1-408
+    vcs-ref: 26f36bfa3e3a04c8c866b250924c1aefc34f01c9
     vcs-type: git
-    vendor: Red Hat, Inc.
-    version: "8.1"
+    vendor: Open Liberty
+    version: 0.2.13
   creationTimestamp: null
   labels:
     app.kubernetes.io/part-of: coffeeshop
     image.opencontainers.org/title: barista-http
+    monitor.appsody.dev/enabled: "true"
     stack.appsody.dev/id: java-openliberty
-    stack.appsody.dev/version: 0.2.3
+    stack.appsody.dev/version: 0.2.13
   name: barista-http
 spec:
-  applicationImage: ianpartridge/barista-http:latest
+  applicationImage: dev.local/barista-http
   createKnativeService: false
   expose: true
   livenessProbe:
@@ -76,6 +75,20 @@ spec:
       port: 9080
     initialDelaySeconds: 30
     periodSeconds: 2
+  monitoring:
+    endpoints:
+    - basicAuth:
+        password:
+          key: password
+          name: barista-http-metrics-liberty
+        username:
+          key: username
+          name: barista-http-metrics-liberty
+      interval: 10s
+      tlsConfig:
+        insecureSkipVerify: true
+    labels:
+      app.kubernetes.io/instance: barista-http
   readinessProbe:
     failureThreshold: 12
     httpGet:

@@ -1,3 +1,3 @@
+id: "20200522111806.10963160"
 project-name: barista-http
-application-name: coffeeshop
 stack: docker.io/appsody/java-openliberty:0.2
