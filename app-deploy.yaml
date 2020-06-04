@@ -65,7 +65,7 @@ metadata:
     stack.appsody.dev/version: 0.2.13
   name: barista-http
 spec:
-  applicationImage: ianparridge/barista-http:latest
+  applicationImage: ianpartridge/barista-http:latest
   createKnativeService: false
   expose: true
   livenessProbe:
