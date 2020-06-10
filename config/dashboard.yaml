@@ -3451,7 +3451,7 @@ spec:
             "multi": true,
             "name": "instance",
             "options": [],
-            "query": "base_cpu_processCpuLoad_percent",
+            "query": "base_cpu_processCpuLoad_percent{job=\"barista-http\"}",
             "refresh": 1,
             "regex": "/base_cpu_processCpuLoad_percent{.*instance=\"(.*)\",.*/",
             "skipUrlSync": false,
