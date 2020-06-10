@@ -66,6 +66,7 @@ metadata:
   name: barista-http
 spec:
   applicationImage: ianpartridge/barista-http:latest
+  pullPolicy: Always
   createKnativeService: false
   expose: true
   livenessProbe:
